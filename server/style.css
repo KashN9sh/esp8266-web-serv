@@ -1,0 +1,53 @@
+H1{font-family:SF UI Display}
+ a{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.fadeIn, .fadeOut, .slideInDown, .slideOutUp {
+	-webkit-animation-duration: 0.4s;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes fadeIn {
+	from {opacity: 0; visibility: hidden;}
+	to {opacity:1; visibility: visible;}
+}
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	opacity: 1;
+	visibility: visible;
+}
+
+@keyframes fadeOut {
+	from {opacity: 1; visibility: visible;}
+	to {opacity:0; visibility: hidden;}
+}
+.fadeOut {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes slideInDown {
+	from {top: -320px;}
+	to {top: 180px;}
+}
+.slideInDown {
+	-webkit-animation-name: slideInDown;
+	animation-name: slideInDown;
+	top: 180px;
+}
+
+@keyframes slideOutUp {
+	from {top: 180px;}
+	to {top: -320px;}
+}
+.slideOutUp {
+	-webkit-animation-name: slideOutUp;
+	animation-name: slideOutUp;
+	top: -320px;
+}
